@@ -1,0 +1,28 @@
+Google Cloud Fundamentals: Getting Started with GKE
+Step 1: Select a zone
+
+export MY_ZONE=us-central1-a
+
+Step 2: Start a Kubernetes cluster managed by Kubernetes Engine. Name the cluster webfrontend and configure it to run 2 nodes
+
+Start a Kubernetes cluster managed by Kubernetes Engine. Name the cluster webfrontend and configure it to run 2 nodes
+
+Step 3: Check your version of Kubernetes
+
+kubectl version
+
+Step 4: launch a single instance of the nginx container.
+
+kubectl create deploy nginx --image=nginx:1.17.10
+
+Step 5: You can view the pods
+
+kubectl expose deployment nginx --port 80 --type LoadBalancer
+
+Step 6: View the new service
+
+kubectl get services
+
+
+
+
